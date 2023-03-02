@@ -5,7 +5,7 @@ import { knex } from '../database'
 
 export async function transactionsRoutes(app: FastifyInstance) {
   app.get('/', async () => {
-    const transaction = await knex('transaction').select()
+    const transaction = await knex('transactions').select()
 
     return { transaction }
   })
@@ -17,7 +17,7 @@ export async function transactionsRoutes(app: FastifyInstance) {
 
     const { id } = getTransactionParamsSchema.parse(request.params)
 
-    const transaction = await knex('transaction').where('id', id).first
+    const transaction = await knex('transactions').where('id', id).first
 
     return { transaction }
   })
@@ -34,7 +34,7 @@ export async function transactionsRoutes(app: FastifyInstance) {
     )
 
     await knex('transactions').insert({
-      id: randomUUID,
+      id: randomUUID(),
       title,
       amount: type === 'credit' ? amount : amount * -1,
     })
