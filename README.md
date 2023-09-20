@@ -1,5 +1,8 @@
 # Fastify Finance Manager
 
+![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+![Typescript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+
 ## Project Description
 
 This money management API is a RESTful web service developed for managing and tracking financial transactions. It is designed using modern web technologies and provides the ability to perform various money management tasks.
