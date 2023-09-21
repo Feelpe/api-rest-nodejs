@@ -31,12 +31,12 @@ TypeScript: A statically typed superset of JavaScript.
 
 Vitest: A testing framework for JavaScript and TypeScript.
 
-## Prerequisites
-- Node.js
-
 ## Getting Started
 
-To get started with the Money Management API, follow these steps:
+### Prerequisites
+- Node.js
+
+### Installation 
 
 1. Clone this GitHub repository to your local machine using the following command:
 
